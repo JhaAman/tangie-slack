@@ -1,0 +1,19 @@
+{
+  "name": "corgi-bolt",
+  "version": "2.0.0",
+  "description": "The Slack receiver server",
+  "main": "app.js",
+  "scripts": {
+    "prod": "export NODE_ENV=production && node app.js",
+    "dev": "export NODE_ENV=development && nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ngrok": "ngrok http 3000"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.6.0",
+    "axios": "^0.25.0",
+    "dotenv": "^16.0.0",
+    "openai-api": "^1.2.6"
+  }
+}
